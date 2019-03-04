@@ -160,7 +160,7 @@ def Feature_Extraction(signal, fs = 1024):
 
 
 def generate_feature_data(subject_name, channel_number):
-	data_dir = "/Users/irene/PycharmProjects/Brain2Speech/data/" + subject_name + "/" + subject_name + "_channel"
+	data_dir = "knn_nn_lstm/data/" + subject_name + "/" + subject_name + "_channel"
 	# + number_of_cannel + ".csv"
 
 	# only use one channel data

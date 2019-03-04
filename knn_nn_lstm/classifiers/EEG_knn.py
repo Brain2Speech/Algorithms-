@@ -11,7 +11,7 @@ import EEG_load
 # main - train&test
 #dataset = EEG_load.load_data("s16",20)
 
-dataset = EEG_feature_extraction.generate_feature_data("s16",20)
+dataset = EEG_feature_extraction.generate_feature_data("s05",20)
 
 X = dataset['X_train']
 y = dataset['Y_train']
@@ -32,10 +32,10 @@ for i in range(3):
 # part 3: plot classification boundaries for k=1 (use utils.plot_2dclassifier)
 model1=knn.fit(X, y, k[2])
 utils.plot_2dclassifier(model1, X, y)
-#plt.show()
+plt.show()
 
 # save figure
-fname = "../s16-c20-mean.png"
+fname = "../s05-c20-mean.png"
 plt.savefig(fname)
 
 
