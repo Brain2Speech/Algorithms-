@@ -4,7 +4,7 @@ Implementation of k-nearest neighbours classifier
 
 import numpy as np
 from scipy import stats
-import utils
+from knn_nn_lstm.tools import utils
 
 def fit(X, y, k):
     """

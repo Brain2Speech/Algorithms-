@@ -4,8 +4,8 @@ from keras.layers import Dense,Activation,LSTM,Dropout
 import pandas as pd
 import matplotlib.pyplot as plt 
 import numpy as np
-import EEG_load
-import EEG_feature_extraction
+from knn_nn_lstm.classifiers import EEG_load
+from knn_nn_lstm.tools import EEG_feature_extraction
 
 #subject_number = ["s09","s10","s11","s12","s13","s14","s15","s17","s18","s19","s20","s21"]
 result=[]

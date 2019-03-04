@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt 
 import random
-import EEG_feature_extraction
+from knn_nn_lstm.tools import EEG_feature_extraction
 from sklearn import preprocessing
 
 # normalize the signal to zero mean and unit variance
